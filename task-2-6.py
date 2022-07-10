@@ -18,7 +18,7 @@ while True:
     if dict_keys == []:   break;
     for key in dict_keys:
         dict_statistics[key] = None;
-print(dict_statistics);
+#print(dict_statistics, end = '\n\n');
 
 n, products_info = 0, [];
 while True:
@@ -37,10 +37,11 @@ while True:
     elif answer == 'no':
         for key in dict_statistics.keys():
             dict_statistics[key] = [];
+        print('\n');
         break;
     else:
         print('Please, try again to answer the question.');
-print(products_info);
+print(products_info, end = '\n\n');
 
 for i in range(n):
     for key, val in products_info[i][1].items():
